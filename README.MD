@@ -79,4 +79,4 @@ See `notebook.ipynb` for an example of how to deploy the model to an endpoint, i
 See the sample output file `real_time_predictions.csv` in the `data/inference/output/real-time` folder.
 
 ## References
-- O. I. Provotar, Y. M. Linder and M. M. Veres, "Unsupervised Anomaly Detection in Time Series Using LSTM-Based Autoencoders," *2019 IEEE International Conference on Advanced Trends in Information Theory (ATIT)*, Kyiv, Ukraine, 2019, pp. 513-517, [doi: 10.1109/ATIT49449.2019.9030505](https://ieeexplore.ieee.org/document/9030505)
+- O. I. Provotar, Y. M. Linder and M. M. Veres, "Unsupervised Anomaly Detection in Time Series Using LSTM-Based Autoencoders," *2019 IEEE International Conference on Advanced Trends in Information Theory (ATIT)*, Kyiv, Ukraine, 2019, pp. 513-517, [doi: 10.1109/ATIT49449.2019.9030505](https://ieeexplore.ieee.org/document/9030505).
