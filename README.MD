@@ -7,13 +7,13 @@ The training and inference Docker images were built by extending the PyTorch 2.0
 ## Model Description
 ### Model Architecture
 The LSTM-AE model reconstructed the time series with a multivariate LSTM autoencoder.
-The encoder and the decoder are stacked LSTM models with the same number of layers.
+The encoder and decoder are stacked LSTM models with the same number of layers.
 Each LSTM layer has the same number of hidden units, and therefore the autoencoder does not have the usual pyramidal structure.
 The encoder takes as input the time series and learns a one-dimensional latent representation.
 The decoder takes as input the one-dimensional latent representation and learns to reconstruct the time series. 
 The autoencoder parameters are learned on a training set containing only normal data (i.e. without anomalies) by minimizing the mean squared error (MSE) between the actual and reconstructed values of the time series.
 
-<img src=https://fg-research-assets.s3.eu-west-1.amazonaws.com/lstm-ae-diagram.png style="width:60%;margin-top:60px;margin-bottom:50px"/> -->
+<img src=https://fg-research-assets.s3.eu-west-1.amazonaws.com/lstm-ae-diagram.png style="width:60%;margin-top:60px;margin-bottom:50px"/>
 
 *LSTM-AE architecture (source: [doi: 10.1109/ATIT49449.2019.9030505](https://ieeexplore.ieee.org/document/9030505))*
 
