@@ -6,7 +6,7 @@ The training and inference Docker images were built by extending the PyTorch 2.0
 
 ## Model Description
 ### Model Architecture
-The LSTM-AE model reconstructed the time series with a multivariate LSTM autoencoder.
+The LSTM-AE model reconstructs the time series with a multivariate LSTM autoencoder.
 The encoder and decoder are stacked LSTM models with the same number of layers.
 Each LSTM layer has the same number of hidden units, and therefore the autoencoder does not have the usual pyramidal structure.
 The encoder takes as input the time series and learns a one-dimensional latent representation.
@@ -67,7 +67,7 @@ The CSV file should not contain any index column or column headers.
 All the time series should have the same length and should not contain missing values.
 See the sample input file `test.csv` in the `data/inference/input` folder.
 
-The inference algorithm outputs the reconstructed values of the time series. 
+The inference algorithm outputs the reconstructed values of the time series.
 
 See the sample output file `batch_predictions.csv` in the `data/inference/output/batch` folder.
 See `notebook.ipynb` for an example of how to launch a batch transform job.
