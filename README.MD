@@ -68,7 +68,6 @@ All the time series should have the same length and should not contain missing v
 See the sample input file `test.csv` in the `data/inference/input` folder.
 
 The inference algorithm outputs the reconstructed values of the time series.
-
 See the sample output file `batch_predictions.csv` in the `data/inference/output/batch` folder.
 See `notebook.ipynb` for an example of how to launch a batch transform job.
 
