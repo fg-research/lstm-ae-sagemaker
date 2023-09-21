@@ -20,7 +20,8 @@ The autoencoder parameters are learned on a training set containing only normal 
 **Model Resources:** [[Paper]](https://ieeexplore.ieee.org/document/9030505)
 
 ## SageMaker Algorithm Description
-The algorithm implements the model as described above with no changes.
+The algorithm implements the model as described above with no changes. 
+However, the algorithm allows the size of the latent representation to be greater than one.
 
 ### Training
 The training algorithm has two input data channels: `training` and `validation`. 
@@ -42,6 +43,7 @@ The algorithm does not support multi-node (or distributed) training across multi
 The training algorithm takes as input the following hyperparameters:
 - `sequence-length`: `int`. The length of the sequences.
 - `sequence-stride`: `int`. The period between consecutive sequences.
+- `latent-dim`: `int`. The size of the latent representation.
 - `num-layers`: `int`. The number of LSTM layers.
 - `hidden-size`: `int`. The number of hidden units of each LSTM layer.
 - `dropout`: `float`. The dropout rate applied after each LSTM layer.
