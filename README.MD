@@ -1,6 +1,6 @@
 # LSTM-AE SageMaker Algorithm
-The [Time Series Anomaly Detection (LSTM-AE) Algorithm from AWS Marketplace](placeholder) performs time series 
-anomaly detection with a Long Short-Term Memory Network Autoencoder (LSTM-AE). 
+The [Time Series Anomaly Detection (LSTM-AE) Algorithm from AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-up2haipz3j472) 
+performs time series anomaly detection with a Long Short-Term Memory Network Autoencoder (LSTM-AE). 
 It implements both training and inference from CSV data and supports both CPU and GPU instances. 
 The training and inference Docker images were built by extending the PyTorch 2.0 Python 3.10 SageMaker containers. 
 
