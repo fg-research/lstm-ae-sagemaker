@@ -95,5 +95,7 @@ The algorithm supports only real-time inference endpoints. The inference image i
 See `notebook.ipynb` for an example of how to deploy the model to an endpoint, invoke the endpoint and process the response.
 See the sample output file `real_time_predictions.csv` in the `data/inference/output/real-time` folder.
 
+**Additional Resources:** [[Sample Notebook]](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/notebook.ipynb) 
+
 ## References
 - P. Malhotra, A. Ramakrishnan, G. Anand, L. Vig, P. Agarwal, and  G. Shroff, "LSTM-based encoder-decoder for multi-sensor anomaly detection", 2016, arXiv preprint, [doi: 10.48550/arXiv.1607.00148](https://doi.org/10.48550/arXiv.1607.00148).
