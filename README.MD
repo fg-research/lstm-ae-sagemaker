@@ -48,9 +48,9 @@ The training and validation datasets should be provided as CSV files and should 
 Each column of the CSV file represents a time series, while each row represents a time step.
 All the time series should have the same length and should not contain missing values.
 The CSV file should not contain any index column or column headers.
+See the sample input files [`train.csv`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/data/training/train.csv) and [`valid.csv`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/data/training/valid.csv).
 
-See the sample input files `train.csv` and `valid.csv` in the `data/training/` folder.
-See `notebook.ipynb` for an example of how to launch a training job.
+See [`notebook.ipynb`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/notebook.ipynb) for an example of how to launch a training job.
 
 #### Distributed Training
 The algorithm supports multi-GPU training on a single instance, which is implemented through [torch.nn.DataParallel](https://pytorch.org/docs/stable/generated/torch.nn.DataParallel.html).
@@ -74,26 +74,25 @@ If the validation channel is provided, the training algorithm also logs the foll
 - `valid_mse`: `float`. Validation mean squared error.
 - `valid_mae`: `float`. Validation mean absolute error.
 
-See `notebook.ipynb` for an example of how to launch a hyperparameter tuning job.
+See [`notebook.ipynb`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/notebook.ipynb) for an example of how to launch a hyperparameter tuning job.
 
 ### Inference
 The inference algorithm takes as input a CSV file containing the time series.
 Each column of the CSV file represents a time series, while each row represents a time step.
 The CSV file should not contain any index column or column headers.
 All the time series should have the same length and should not contain missing values.
-See the sample input file `test.csv` in the `data/inference/input` folder.
+See the sample input file [`test.csv`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/data/inference/input/test.csv).
 
 The inference algorithm outputs the anomaly scores and the reconstructed values of the time series. 
 The anomaly scores are included in the first column, while the reconstructed values of the time series are included in the subsequent columns. 
+See the sample output files [`batch_predictions.csv`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/data/inference/output/batch/batch_predictions.csv) and [`real_time_predictions.csv`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/data/inference/output/real-time/real_time_predictions.csv).
 
-See the sample output file `batch_predictions.csv` in the `data/inference/output/batch` folder.
-See `notebook.ipynb` for an example of how to launch a batch transform job.
+See [`notebook.ipynb`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/notebook.ipynb) for an example of how to launch a batch transform job.
 
 #### Endpoints
 The algorithm supports only real-time inference endpoints. The inference image is too large to be uploaded to a serverless inference endpoint.
 
-See `notebook.ipynb` for an example of how to deploy the model to an endpoint, invoke the endpoint and process the response.
-See the sample output file `real_time_predictions.csv` in the `data/inference/output/real-time` folder.
+See [`notebook.ipynb`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/notebook.ipynb) for an example of how to deploy the model to an endpoint, invoke the endpoint and process the response.
 
 **Additional Resources:** [[Sample Notebook]](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/notebook.ipynb) 
 
