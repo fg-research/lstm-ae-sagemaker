@@ -5,7 +5,6 @@ It implements both training and inference from CSV data and supports both CPU an
 The training and inference Docker images were built by extending the PyTorch 2.0 Python 3.10 SageMaker containers. 
 
 ## Model Description
-### Model Architecture
 The LSTM-AE model reconstructs the time series with an LSTM autoencoder.
 The encoder and decoder consist of a single LSTM layer and have the same number of hidden units.
 The encoder takes as input the time series and returns the hidden states.
