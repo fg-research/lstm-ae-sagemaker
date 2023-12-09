@@ -2,7 +2,7 @@
 The [Time Series Anomaly Detection (LSTM-AE) Algorithm from AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-up2haipz3j472) 
 performs time series anomaly detection with a Long Short-Term Memory Network Autoencoder (LSTM-AE). 
 It implements both training and inference from CSV data and supports both CPU and GPU instances. 
-The training and inference Docker images were built by extending the PyTorch 2.0 Python 3.10 SageMaker containers. 
+The training and inference Docker images were built by extending the PyTorch 2.1.0 Python 3.10 SageMaker containers. 
 
 ## Model Description
 The LSTM-AE model reconstructs the time series with an LSTM autoencoder.
@@ -87,6 +87,9 @@ The anomaly scores are included in the first column, while the reconstructed val
 See the sample output files [`batch_predictions.csv`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/data/inference/output/batch/batch_predictions.csv) and [`real_time_predictions.csv`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/data/inference/output/real-time/real_time_predictions.csv).
 
 See [`notebook.ipynb`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/notebook.ipynb) for an example of how to launch a batch transform job.
+
+**Notes:**
+- The algorithm does not support variable length sequences, and therefore the length of the input time series should be a multiple of the sequence length.
 
 #### Endpoints
 The algorithm supports only real-time inference endpoints. The inference image is too large to be uploaded to a serverless inference endpoint.
