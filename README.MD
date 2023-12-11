@@ -88,8 +88,7 @@ See the sample output files [`batch_predictions.csv`](https://github.com/fg-rese
 
 See [`notebook.ipynb`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/notebook.ipynb) for an example of how to launch a batch transform job.
 
-**Notes:**
-- The algorithm does not support variable length sequences, and therefore the length of the input time series should be a multiple of the sequence length.
+**Note:** The algorithm does not support variable length sequences, and therefore the length of the input time series should be a multiple of the sequence length.
 
 #### Endpoints
 The algorithm supports only real-time inference endpoints. The inference image is too large to be uploaded to a serverless inference endpoint.
