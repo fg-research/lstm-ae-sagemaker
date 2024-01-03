@@ -95,7 +95,7 @@ The algorithm supports only real-time inference endpoints. The inference image i
 
 See [`notebook.ipynb`](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/notebook.ipynb) for an example of how to deploy the model to an endpoint, invoke the endpoint and process the response.
 
-**Additional Resources:** [[Sample Notebook]](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/notebook.ipynb) 
+**Additional Resources:** [[Sample Notebook]](https://github.com/fg-research/lstm-ae-sagemaker/blob/master/notebook.ipynb)  [[Blog Post]](https://fg-research.com/blog/product/posts/lstm-ae-oil-price-anomaly-detection.html)
 
 ## References
 - P. Malhotra, A. Ramakrishnan, G. Anand, L. Vig, P. Agarwal, and  G. Shroff, "LSTM-based encoder-decoder for multi-sensor anomaly detection", 2016, arXiv preprint, [doi: 10.48550/arXiv.1607.00148](https://doi.org/10.48550/arXiv.1607.00148).
